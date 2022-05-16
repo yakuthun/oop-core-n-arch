@@ -16,5 +16,9 @@
     @Html.Label("Müşteri Şehir")
     @Html.TextBoxFor(x => x.City, new { @class = "form-control" })
     <br />
+
+    @Html.Label("Meslek Seçiniz");
+    @Html.DropDownListFor(x => x.JobID, (List<SelectListItem>)ViewBag.v, new { @class = "form-control" })
+    <br />
     <button class="btn btn-primary btn-block btn-lg">Müşteriyi Güncelle</button>
 </form>

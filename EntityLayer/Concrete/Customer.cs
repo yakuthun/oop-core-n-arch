@@ -13,5 +13,8 @@ namespace EntityLayer.Concrete
         public int Id { get; set; }
         public string Name { get; set; }
         public string City { get; set; }
+        //job ilişki
+        public int JobID { get; set; }
+        public Job Job { get; set; }
     }
 }
